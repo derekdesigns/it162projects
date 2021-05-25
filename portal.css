@@ -1,0 +1,151 @@
+/* IT162 Portal Website Styles */
+
+html {
+    background-color: #ccc;
+}
+
+main.wrapper {
+    background-color: #fff;
+    overflow:auto;
+    border: solid 2px sandybrown;
+    padding: 20px 40px;
+}
+
+h1>a {
+    text-decoration: none;
+    color:#000;
+}
+
+h3 {
+    padding:10px 20px;
+    text-align: center;
+}
+
+blockquote {
+    border: solid 2px sandybrown;
+    padding: 10px;
+    font-size: 1.5em;
+    font-family: fantasy, cursive, verdana;
+}
+
+p {
+    font-size: 1.1em;
+    font-family: american typewriter, serif, verdana;
+    padding: 5px;
+}
+
+.fa-hourglass-half {
+    color:sandybrown;
+    margin: 10px 30px;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+	clear:both;
+    padding:10px 0;
+}
+
+
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+   main.wrapper {
+		margin:auto;
+		width:80%;
+   }
+   section{
+        width:65%;
+		float:left;
+	}
+	
+     aside {	
+		width:34%;
+		float:right;
+	}
+			
+    img.desktop {
+        float: right;
+       	width: 50%;
+        display: inline-block;
+        padding-left: 20px;
+    }
+    
+    img.tablet, img.phone {
+       	display:none;
+    	}  
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: #6E8B3D;
+        		color:#000;
+   	 }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+	
+	section {
+		width:60%;
+		float:left;
+	}
+	
+	aside {	
+		width:39%;
+		float:right;
+	}
+	
+    img.tablet {
+       	width:100%;
+        display:inline-block;
+        padding: 5px;
+    }
+    
+    img.desktop, img.phone {
+       	display:none;
+    	}  
+    
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #6E8B3D;
+        color:#000;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+    img.phone {
+       	width:100%;
+        display:inline-block;
+        padding: 5px;
+    }
+    
+    img.tablet, img.desktop {
+       	display:none;
+    	}  
+
+}
