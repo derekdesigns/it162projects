@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Derek's IT162 Portal Page</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/portal.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+</head>
+
+<body>
+<!-- START WRAPPER -->
+<main class="wrapper">
+<header>
+  <h1><a href="index.php"><i class="fa fa-hourglass-half"></i>Derek Murphy's SCC IT162 Portal</a></h1>
+  <nav>
+    <ul class="topnav" id="myTopnav">
+      <li><a href="index.php" class="selected">Welcome</a></li>
+      <li><a href="big/index.php">Big</a></li>
+      <li><a href="aia.php">AIA</a></li>
+      <li><a href="flowchart.php">Flowchart</a></li>
+      <li><a href="fp/index.php">Final Project</a></li>
+      <li><a href="contactme.php">Contact Derek</a></li>
+      <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> </li>
+    </ul>
+  </nav>
+</header>
+       
+<!-- START LEFT COL -->
+<section>
+ <h2 class="pageID">Hello there!</h2>
+
+<!-- MAKE SURE YOU GET YOUR (3) IMAGES SAVED INTO YOUR IMAGES FOLDER -->
+ <img src="images/richmond.jpeg" class="desktop" alt="bubblewaffle" />
+ <img src="images/cappuccino.jpg" class="phone" alt="coffee" />
+ <img src="images/horseracing.jpg" class="tablet" alt="ponies" />
+ <p>I'm excited to be a part of Seattle Central's Web Design Program. I returned to school last year, earning a certificate at North Seattle in Web Application Technologies. Prior to enrolling there, I really had no experience at all in IT (actually, I may not have known what IT stood for). So I'm vey grateful to now have at least a basic understanding of javascript, html, css, databases, networking, and troubleshooting. As valuable as it was to cover such a broad range of skills, the only class that I truly enjoyed was Web Authoring. That's what brings me here!</p>
+ <p>I have worked in hospitality for over 25 years. It offered a decent living and forged many friendships, but crazy long hours and stress was creating major burnout.... COVID related unemployment gave me time to reflect on this, and alter my path. </p>
+</section>
+<!-- END LEFT COL -->
+
+<!-- START RIGHT COL -->
+<aside>
+  <h3>Favorite Quote:</h3>
+  <blockquote>"Keep away from people who try to belittle your ambitions. Small people always do that, but the really great make you feel that you, too, can become great." - Mark Twain</blockquote>
+</aside>
+<!-- END RIGHT COL -->
+ 
+<!-- START Footer -->
+<footer>
+  <p><small>&copy; 2021 - <?=date('Y')?> by <a href="contactme.php" target="_blank">Murphwillsurf</a>, All Rights Reserved ~ <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
+</footer>
+<!-- END Footer --> 
+</main>
+<!-- END WRAPPER -->
+
+    <!-- JavaScript associated with the W3Schools.com Top Navigation Response Exercise --> 
+    <script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+     </script>
+</body>
+</html>
