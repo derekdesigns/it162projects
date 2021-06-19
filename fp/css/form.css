@@ -1,0 +1,45 @@
+/* Contact Form Styles */
+
+form {
+  margin-top: 5em;
+  max-width: 40%;
+}
+
+input:optional, input:required, textarea:optional {
+   background-color:#f1f1f1;
+   border:1px solid black;
+   margin: 10px 0 25px 0;
+   padding: 20px 0;
+   width: 75%;
+}
+
+input[type="submit"], input[type="button"] {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 1.5em;
+    border: solid 1px black;
+    border-style: ridge;
+    margin-top: 1em;
+    width: 4em;
+}
+
+legend {
+    margin-left: .5em;
+    padding: .2em .5em;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+}
+
+fieldset {
+  border: 2px solid #000000;
+}
+
+ /* writes to small text above reCAPTCHA upon failure */
+
+ .dateFeedback{
+  font-style:italic;
+  font-size:70%;
+  font-weight:bold;
+  color:#f00;
+}
+

@@ -1,0 +1,197 @@
+/* IT162 Portal Website Styles */
+
+html {
+    background-color: #ccc;
+}
+
+main.wrapper {
+    background-color: #fff;
+    overflow:auto;
+    border: solid 2px sandybrown;
+    padding: 20px 40px;
+}
+
+h1>a {
+    text-decoration: none;
+    color:#000;
+}
+
+.fa-hourglass-half {
+    color:sandybrown;
+    margin: 10px 30px;
+    text-shadow:1px 1px #ccc;
+    font-size:1.25em;
+}
+
+
+
+aside {
+    border: 2px dashed sandybrown;
+    margin-top: 75px;
+    margin-right: 10px;
+}
+
+aside p {
+    font-size: 90%;
+    padding: 15px;
+}
+
+aside h2 {
+    padding-top: 15px;
+    padding-left: 15px;
+    /* text-align: center; */
+}
+
+h3 { 
+    padding:10px 15px;
+    margin-right: 50px;
+    /* text-align: center; */
+}
+
+h4 {
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+blockquote {
+    border: solid 2px #6E8B3D;
+    padding: 5px;
+    font-size: 1.5em;
+    font-family: fantasy, cursive, verdana;
+    margin-right: 100px;
+}
+
+p {
+    font-size: 1.1em;
+    font-family: american typewriter, serif, verdana;
+    padding: 5px;
+}
+
+footer {
+	clear:both;
+    padding:10px 0;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* height: 0; */
+    overflow: hidden;
+    margin: auto;
+    max-width: 100%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* End Embed Responsively Rules */
+
+/* Hide Agenda View Calendar */
+
+div.embed-container.agenda-view {
+    display: none;
+}
+
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+	
+   main.wrapper {
+		margin:auto;
+		width:80%;
+   }
+   section{
+        width:65%;
+		float:left;
+	}
+	
+     aside {	
+		width:30%;
+		float:right;
+	}
+			
+    img.desktop {
+        float: right;
+       	width: 50%;
+        display: inline-block;
+        padding-left: 20px;
+    }
+    
+    img.tablet, img.phone {
+       	display:none;
+    	}  
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        		background-color: #6E8B3D;
+        		color:#000;
+   	 }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+	
+	section {
+		width:60%;
+		float:left;
+	}
+	
+	aside {	
+		width:35%;
+		float:right;
+	}
+	
+    img.tablet {
+       	width:100%;
+        display:inline-block;
+        padding: 5px;
+    }
+    
+    img.desktop, img.phone {
+       	display:none;
+    	} 
+        
+    /* Calendar Rules for Phone */
+@media all and (max-width: 1440px) {
+
+    /* Show Agenda View Calendar */
+    div.embed-container.agenda-view {
+        display: block;
+    }
+
+    /* Hide Month View Calendar */
+    div.embed-container.month-view {
+        display: none;
+    }
+}
+    
+    /* Change background color of navigation on selected page */
+    ul.topnav li a.selected {
+        background-color: #6E8B3D;
+        color:#000;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+    
+    img.phone {
+       	width:100%;
+        display:inline-block;
+        padding: 5px;
+    }
+    
+    img.tablet, img.desktop {
+       	display:none;
+    	}  
+
+}
