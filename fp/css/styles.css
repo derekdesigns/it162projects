@@ -1,0 +1,225 @@
+/* IT162 Final Project Styles */
+
+html {
+    background-color: #000000;
+}
+
+main.wrapper {
+    background-color: #fff;
+    overflow:auto;
+    padding: 20px;
+}
+
+aside {
+    margin-right: .5em;
+}
+
+header img {
+    max-height: 20%;
+    max-width: 20%;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    padding:10px 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1em;
+    font-family: 'Playfair Display', serif;
+    padding: 1em;
+}
+
+img {
+    border: 5px solid #000000;
+}
+
+img.center {
+    display: block;
+    margin: 2em auto;
+    width: 75%;
+}
+
+img.half {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    width: 50%;
+}
+
+.contact-feedback {
+    margin-top: 12em;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: auto;
+    max-width: 98%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+	clear: both;
+    margin-top: 1em;
+    padding: 1em;
+    border: 2px solid black;
+
+}
+
+/* Footer Social Media Icon Styles*/
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP*/
+@media all and (min-width:1400px) {
+	
+    main.wrapper {
+         width: 80%;
+         margin: auto;
+     }
+    section{
+         width: 65%;
+         float: left;
+     }
+     
+      aside {	
+         width:34%;
+         float:right;
+     }
+             
+     img.desktop {
+            width: 50%;
+         display: inline-block;
+     }
+     
+     img.tablet, img.phone {
+            display:none;
+         }  
+     
+     /* Change background color of navigation on selected page */
+     ul.topnav li a.selected {
+         background-color: #FFFFFF;
+         color: #000000;
+         }
+ }
+ 
+ 
+ /* TABLET */
+ @media all and (min-width:737px) and (max-width:1399px) {
+     
+     section {
+         width:55%;
+         float:left;
+     }
+     
+     aside {	
+         width:40%;
+         float:right;
+     }
+     
+     img.tablet {
+        width: 100%;
+        display: inline-block;
+     }
+     
+     img.desktop, img.phone {
+            display:none;
+         }  
+     
+     
+     /* Change background color of navigation on selected page */
+     ul.topnav li a.selected {
+         background-color: #FFFFFF;
+         color: #000000;
+     }
+ }
+ 
+ /* PHONE */
+ @media all and (max-width:736px) {
+     
+     img.phone {
+            width: 50%;
+         display:inline-block;
+         padding: 5px;
+     }
+     
+     img.tablet, img.desktop {
+            display:none;
+         }  
+ 
+ }
+ 
+
